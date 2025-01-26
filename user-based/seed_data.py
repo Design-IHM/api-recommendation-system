@@ -7,7 +7,7 @@ os.environ["FIRESTORE_EMULATOR_HOST"] = "localhost:8080"
 
 # Chemin vers le fichier service-account-key.json
 current_dir = os.path.dirname(os.path.abspath(__file__))
-cred = credentials.Certificate(os.path.join(current_dir, 'functions', 'service-account-key.json'))
+cred = credentials.Certificate(os.path.join(current_dir, 'user-based', 'service-account-key.json'))
 
 # Initialisation de Firebase Admin
 if not firebase_admin._apps:
